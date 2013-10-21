@@ -14,10 +14,14 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 
 class AbstractServiceFactory implements AbstractFactoryInterface
 {
-    protected $config;
-
     public function canCreateServiceWithName(ServiceLocatorInterface $locator, $name, $requestedName)
     {
+        /** If the requested service is a factory, dynamically register it */
+        if (is_subclass_of($requestedName, 'Zend\ServiceManager\FactoryInterface')) {
+            $service = $locator->get('ServiceManager');
+            $service->setFactory($requestedName, $requestedName);
+        }
+
         if (class_exists($requestedName)){
             return true;
         }
@@ -27,7 +31,7 @@ class AbstractServiceFactory implements AbstractFactoryInterface
 
     public function createServiceWithName(ServiceLocatorInterface $locator, $name, $requestedName)
     {
-        $class = $requestedName;
+        $class = new $requestedName;
         return new $class;
     }
 }
