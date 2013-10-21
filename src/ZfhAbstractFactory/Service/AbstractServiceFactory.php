@@ -14,8 +14,6 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 
 class AbstractServiceFactory implements AbstractFactoryInterface
 {
-    protected $config;
-
     public function canCreateServiceWithName(ServiceLocatorInterface $locator, $name, $requestedName)
     {
         if (class_exists($requestedName)){
