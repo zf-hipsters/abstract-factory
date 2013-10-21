@@ -22,7 +22,7 @@ php ./composer.phar update
 Route Example
 ===============
 
-``
+```
 'router' => array(
         'routes' => array(
             'home' => array(
@@ -37,3 +37,4 @@ Route Example
             ),
         )
 );
+````
