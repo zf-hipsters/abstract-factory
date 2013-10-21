@@ -2,7 +2,8 @@ Abstract Factory
 ====================
 
 A simple module that removes the requirement to setup invokables and factories for services and controllers.
-There is no requirement to use aliases that make your code inconsistant, just use the full namespace and the abstract will find it instantiate it when required.
+
+There is no requirement to use aliases that make your code inconsistant, just use the full namespace and the abstract will find it and instantiate it when required.
 
 Installation
 --------------
@@ -35,7 +36,7 @@ Route Example
                         'action'     => 'index',
                     ),
                 ),
-            ),
+            ),
         )
 );
 ````
