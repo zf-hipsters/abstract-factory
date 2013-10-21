@@ -2,6 +2,7 @@ Abstract Factory
 ====================
 
 A simple module that removes the requirement to setup invokables and factories for services and controllers.
+There is no requirement to use aliases that make your code inconsistant, just use the full namespace and the abstract will find it instantiate it when required.
 
 Installation
 --------------
@@ -20,7 +21,7 @@ php ./composer.phar update
 2) Add 'ZfhAbstractFactory' to your /config/application.config.php modules
 
 Route Example
-===============
+--------------
 
 ```
 'router' => array(
@@ -38,3 +39,16 @@ Route Example
         )
 );
 ````
+
+ServiceManager Example
+--------------
+
+In your controller file
+```
+$this->getServiceLocator()->get('Application\Service\MyService');
+```
+
+Calling a factory
+```
+$this->getServiceLocator()->get('Application\Service\MyServiceFactory');
+```
