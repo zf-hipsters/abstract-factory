@@ -1,11 +1,11 @@
 {
-    "name": "zf-hipsters/zfh-abstract-factory",
+    "name": "zf-hipsters/abstract-factory",
     "description": "A simple module that removes the requirement to setup invokables and factories for services and controllers..",
     "type": "library",
     "keywords": [
         "zf2 abstract factory service"
     ],
-    "homepage": "https://github.com/zf-hipsters/zfh-abstract-factory",
+    "homepage": "https://github.com/zf-hipsters/abstract-factory",
     "authors": [
         {
             "name": "Aaron Weatherall",
