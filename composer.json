@@ -1,0 +1,28 @@
+{
+    "name": "zf-hipsters/zfh-abstract-factory",
+    "description": "A simple module that removes the requirement to setup invokables and factories for services and controllers..",
+    "type": "library",
+    "keywords": [
+        "zf2, abstract, factory, service"
+    ],
+    "homepage": "https://github.com/zf-hipsters/zfh-abstract-factory",
+    "authors": [
+        {
+            "name": "Aaron Weatherall",
+            "email": "aaron@weatherall.net.au",
+            "homepage": "http://www.aaronweatherall.com"
+        },
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": ">2.2.0rc1"
+    },
+    "autoload": {
+        "psr-0": {
+            "ZfhAbstractFactory": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
