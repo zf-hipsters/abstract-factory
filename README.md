@@ -22,7 +22,7 @@ Within the "repositories" section (create it as below if it doesn't exist):
 Within the "require" section:
 
 ```php
-"zf-hipsters/abstract-factory": "dev-master"
+"zf-hipsters/zfh-abstract-factory": "dev-master"
 ```
 
 2) Open up your command line and run
