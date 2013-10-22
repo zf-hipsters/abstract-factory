@@ -7,7 +7,6 @@ There is no requirement to use aliases that make your code inconsistant, just us
 
 This module is aimed at saving time which would otherwise be spent on configuration. 
 
-If you do decide to add configuration for controllers
 
 Installation
 --------------
