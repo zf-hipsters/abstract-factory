@@ -12,7 +12,7 @@ Installation
 --------------
 1) Add the following requirement to your projects composer.json file.
 
-ithin the "require" section:
+Within the "require" section:
 
 ```php
 "zf-hipsters/abstract-factory": ">=0.9"
