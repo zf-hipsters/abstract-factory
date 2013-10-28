@@ -12,20 +12,10 @@ Installation
 --------------
 1) Add the following requirement to your projects composer.json file.
 
-Within the "repositories" section (create it as below if it doesn't exist):
+ithin the "require" section:
 
 ```php
-"repositories": [
-  {
-    "type": "vcs",
-    "url": "https://github.com/zf-hipsters/abstract-factory"
-  }
-],
-```
-Within the "require" section:
-
-```php
-"zf-hipsters/zfh-abstract-factory": "dev-master"
+"zf-hipsters/abstract-factory": ">=0.9"
 ```
 
 2) Open up your command line and run
